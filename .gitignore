@@ -28,3 +28,6 @@ nbactions*.xml
 
 # Playground
 #/tool/playground/
+
+# vim temporary files
+*.swp
