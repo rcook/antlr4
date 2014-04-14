@@ -63,13 +63,11 @@ public class XPath {
 	public static final String WILDCARD = "*"; // word not operator/separator
 	public static final String NOT = "!"; 	   // word for invert operator
 
-	protected String path;
 	protected XPathElement[] elements;
 	protected Parser parser;
 
 	public XPath(Parser parser, String path) {
 		this.parser = parser;
-		this.path = path;
 		elements = split(path);
 //		System.out.println(Arrays.toString(elements));
 	}

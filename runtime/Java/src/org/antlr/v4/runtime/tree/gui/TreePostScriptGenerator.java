@@ -68,7 +68,6 @@ public class TreePostScriptGenerator {
 	protected int nodeHeightPaddingAbove = 0;
 	protected int nodeHeightPaddingBelow = 5;
 
-	protected Tree root;
 	protected TreeTextProvider treeTextProvider;
 	protected TreeLayout<Tree> treeLayout;
 
@@ -81,7 +80,6 @@ public class TreePostScriptGenerator {
 	public TreePostScriptGenerator(@Nullable List<String> ruleNames, Tree root,
 								   String fontName, int fontSize)
 	{
-		this.root = root;
 		setTreeTextProvider(new TreeViewer.DefaultTreeTextProvider(ruleNames));
 		doc = new PostScriptDocument(fontName, fontSize);
 		boolean compareNodeIdentities = true;

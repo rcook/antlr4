@@ -61,7 +61,6 @@ public class PostScriptDocument {
 	protected SystemFontMetrics fontMetrics;
 	protected String fontName;
 	protected int fontSize = 12;
-	protected double lineWidth = 0.3;
 	protected String boundingBox;
 
 	protected StringBuilder ps = new StringBuilder();
